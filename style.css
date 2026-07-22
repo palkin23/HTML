@@ -1,0 +1,27 @@
+
+body{
+    background-color: bisque;
+    color: maroon;
+}
+#subject{
+    background-color:ghostwhite;
+}
+.mytext{
+ background-color: rgb(255,200,255,0.5)
+}
+.mypara,button{
+    background-color: rosybrown;
+   
+}
+button{
+     border-radius:5rem;
+    color: aliceblue;
+
+}
+.d p{
+    background-color:hotpink;
+}
+.test>p{
+    background-color: lightpink;
+}
+

@@ -1,0 +1,26 @@
+.box{
+     width: 100px;
+    height: 100px;
+    border: 2px solid purple;
+    background-color: beige;
+}
+.box:hover:nth-child(odd){
+    background-color:chartreuse;
+    border-radius: 10rem;
+}
+.box:hover:nth-child(even){
+ background-color:aqua;
+    border-radius: 10rem;
+}
+.box:nth-child(2n) {
+    background-color: hotpink
+}
+button{
+    border-radius: 5rem;
+    background-color: beige;
+    outline: red;
+}
+button:focus{
+    background-color: blue;
+
+}
