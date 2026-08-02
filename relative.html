@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Position Demo</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin:0;
+        }
+
+        /* Sticky */
+        .sticky{
+            position: sticky;
+            top:0;
+            background: purple;
+            color:white;
+            padding:15px;
+            text-align:center;
+        }
+
+        .container{
+            position: relative;
+            width:500px;
+            height:300px;
+            border:3px solid black;
+            margin:50px auto;
+        }
+
+        .box{
+            width:100px;
+            height:100px;
+            color:white;
+            text-align:center;
+            line-height:100px;
+            font-weight:bold;
+        }
+
+        /* Static */
+        .static{
+            position: static;
+            background:blue;
+        }
+
+        /* Relative */
+        .relative{
+            position:relative;
+            background:orange;
+            top:20px;
+            left:30px;
+        }
+
+        /* Absolute */
+        .absolute{
+            position:absolute;
+            background:red;
+            top:20px;
+            right:20px;
+        }
+
+        /* Fixed */
+        .fixed{
+            position:fixed;
+            background:green;
+            bottom:20px;
+            right:20px;
+            width:120px;
+            height:60px;
+            line-height:60px;
+        }
+
+        .content{
+            height:1200px;
+            padding:20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sticky -->
+    <div class="sticky">Sticky Header</div>
+
+    <div class="container">
+
+        <!-- Static -->
+        <div class="box static">Static</div>
+
+        <!-- Relative -->
+        <div class="box relative">Relative</div>
+
+        <!-- Absolute -->
+        <div class="box absolute">Absolute</div>
+
+    </div>
+
+    <!-- Fixed -->
+    <div class="fixed">Fixed</div>
+
+    <div class="content">
+        <h2>Scroll Down</h2>
+        <p>
+            Scroll this page to observe:
+        </p>
+
+        <ul>
+            <li><b>Static</b> stays in its normal position.</li>
+            <li><b>Relative</b> moves from its original position.</li>
+            <li><b>Absolute</b> is positioned relative to the container.</li>
+            <li><b>Sticky</b> sticks to the top while scrolling.</li>
+            <li><b>Fixed</b> remains at the bottom-right of the screen.</li>
+        </ul>
+    </div>
+
+</body>
+</html>
